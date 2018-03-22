@@ -9,7 +9,8 @@ class Triangle
 
 :equilateral, :isosceles, :scalene
   def kind
-
+    if s1 == s2 && s2 == s3
+      :equilateral
   end
 
   class TriangleError < StandardError
