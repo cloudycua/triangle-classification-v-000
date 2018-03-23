@@ -17,12 +17,8 @@ class Triangle
         :scalene
       end
     else
-      begin
         raise TriangleError
-      rescue PartnerError =>
-        puts error.message
-      end
-    end  
+    end
   end
 
   class TriangleError < StandardError
